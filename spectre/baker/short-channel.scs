@@ -1,0 +1,42 @@
+/*******************************************************************************
+* Short-Channel CMOS Process in Cadence Spectre Syntax
+*
+* Extracted from:
+* R. Jacob Baker; CMOS Circuit Design, Layout, and Simulation; Third Edition
+* IEEE Press Series on Microelectronic Systems; ISBN 978-0-470-88132-3
+*******************************************************************************/
+
+model nmos bsim4 type=n version = 4.5          
++binunit = 1       paramchk = 1      mobmod = 0         
++capmod = 2        igcmod = 1        igbmod = 1        geomod = 1
++diomod = 1        rdsmod = 0        rbodymod = 1      ragatemod = 1
++permod = 1        acnqsmod = 0      trnqsmod = 0
+
++tnom = 27         toxe = 1.4e-9     toxp = 7e-10      toxm = 1.4e-9
++epsrox = 3.9      wint = 5e-9       lint = 1.2e-8
++ll = 0            wl = 0            lln = 1           wln = 1
++lw = 0            ww = 0            lwn = 1           wwn = 0
++lwl = 0           wwl = 0           xpart = 0         toxref = 1.4e-9
+
++vth0 = 0.22       k1 = 0.35         k2 = 0.05         k3 = 0
++k3b = 0           w0 = 2.5e-6       dvt0 = 2.8        dvt1 = 0.52
++dvt2 = -0.032     dvtOw = 0         dvtlw = 0         dvt2w = 0
++dsub = 2          minv = 0.05       voffl = 0         dvtp0 = 1e-7
++dvtp1 = 0.05      lpe0 = 5.75e-8    lpeb = 2.3e-10    xj = 2e-8
++ngate = 5e20      ndep = 2.8e18     nsd = 1e020       phin = 0
++cdsc = 0.0002     cdscb = 0         cdscd = 0         cit = 0
++voff = -0.15      nfactor = 1.2     etaO = 0.15       etab = 0
++vfb = -0.55       uO = 0.032        ua = 1.6e-10      ub = 1.1e-17
++uc = -3e-11       vsat = 1.1e5      a0 = 2            ags = 1e-20
++a1 = 0            a2 = 1            b0 = -1e-20       b1 = 0
++keta = 0.04       dwg = 0           dwb = 0           pclm = 0.18
++pdibld = 0.028    pdiblc2 = 0.022   pdiblcb = -0.005  drout = 0.45
++pvag = 1e-20      delta = 0.01      pscbel = 8.14e8   pscbe2 = 1e-7
++fprout = 0.2      pdits = 0.2       pditsd = 0.23     pditsl = 2.3e6
++rsh = 3           rdsw = 150        rsw = 150         rdw = 150
++rdswmin = 0       rdwmin = 0        rswmin = 0        prwg = 0
++prwb = 6.8e-11    wr = 1            alphaO = 0.074    alphal = 0.005
++beta0 = 30        agidl = 0.0002    bgidl = 2.1e9     cgidl = 0.0002
++egidl = 0.8
+
++aigbacc = 0.012
