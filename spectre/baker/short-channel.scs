@@ -75,11 +75,11 @@ model pmos bsim4 type=p version = 4.5
 +binunit = 1       paramchk = 1         mobmod = 0
 +capmod = 2        igcmod = 1           igbmod = 1       geomod = 1
 +diomod = 1        rdsmod = 0           rbodymod = 1     rgatemod = 1
-+permod = 1        acnqsmod = 0         tmqsmod = 0
++permod = 1        acnqsmod = 0         trnqsmod = 0
  
 +tnom = 27         toxe = 1.4e-9        toxp =7e-01      toxm = 1.4e-9
 +epsrox = 3.9      wint = 5e-9          lint = 1.2e-8
-+ll = 0            wl = 0               lln = 1          win = 1
++ll = 0            wl = 0               lln = 1          wln = 1
 +lw = 0            ww = 0               lwn = 1          wwn = 1
 +lwl = 0           wwl = 0              xpart = 0        toxref = 1.4e-9
 
@@ -93,14 +93,14 @@ model pmos bsim4 type=p version = 4.5
 +voff = -0.15      nfactor = 2          eta0 =0.15       etab = 0
 +vfb = 0.55        u0 = 0.0095          ua = 1.6e-9      ub = 8e-18
 +uc = 4.6e-13      vsat = 90000         a0 = 1.2         ags = 1e-20
-+a1 = 0            a2 = 1               bO = -1e-20      b1 = 0
++a1 = 0            a2 = 1               b0 = -1e-20      b1 = 0
 +keta = -0.047     dwg = 0              dwb = 0          pclm = 0.55
-+pdibld = 0.03     pdiblc2 = 0.0055     pdiblcb = 3.4e-8 drout = 0.56
-+pvag = 1e-20      delta = 0.014        pscbel = 8.14e8  pscbe2 = 9.58e-7
++pdiblc1 = 0.03    pdiblc2 = 0.0055     pdiblcb = 3.4e-8 drout = 0.56
++pvag = 1e-20      delta = 0.014        pscbe1 = 8.14e8  pscbe2 = 9.58e-7
 +fprout = 0.2      pdits = 0.2          pditsd = 0.23    pditsl = 2.3e6
 +rsh = 3           rdsw = 250           rsw = 160        rdw = 160
 +rdswmin = 0       rdwmin = 0           rswmin = 0       prwg = 3.22e-8
-+prwb = 6.8e-11    wr = 1               alphaO = 0.074   alphal = 0.005
++prwb = 6.8e-11    wr = 1               alpha0 = 0.074   alpha1 = 0.005
 +beta0 = 30        agidl = 0.0002       bgidl = 2.1e9    cgidl = 0.0002
 +egidl = 0.8
 
@@ -124,7 +124,7 @@ model pmos bsim4 type=p version = 4.5
 
 
 +ijthsfwd = 0.01   ijthsrev = 0.001     bvs = 10         xjbvs = 1
-+jsd = 0.0001      jswd = 1e-11         jswd =1e-11      njd = 1 
++jsd = 0.0001      jswd = 1e-11         jswgd =1e-10     njd = 1 
 +ijthdfwd = 0.01   ijthdrev = 0.001     bvd = 10         xjbvd = 1  
 +pbs = 1           cjs = 0.0005         mjs = 0.5        pbsws = 1
 +cjsws = 5e-10     mjsws = 0.33         pbswgs = 1       cjswgs = 3e-10
